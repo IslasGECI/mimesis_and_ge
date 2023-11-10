@@ -14,8 +14,8 @@ class CustomDataProvider(BaseDataProvider):
         datafile = "file_name.json"
         datadir = Path(__file__).parent / "custom_datadir"
 
-    def my_method(self, i):
-        return self.random.choices(self.extract(["Isla"]), k=i)
+    def my_method(self, key, i):
+        return self.random.choices(self.extract([key]), k=i)
 
 
 cdp = CustomDataProvider(Locale.ES)
@@ -32,8 +32,8 @@ def make_dataframe():
     return pd.DataFrame.from_dict(
         {
             "Fecha": fs("increment"),
-            "Isla": cdp.my_method(7),
-            "Especie": fs("email"),
+            "Isla": cdp.my_method("Isla", 7),
+            "Especie": cdp.my_method("Especie", 7),
             "Temporada": fs("telephone", mask="+1 (###) #5#-7#9#"),
         }
     )
