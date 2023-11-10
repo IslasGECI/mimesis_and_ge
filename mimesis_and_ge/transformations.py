@@ -12,9 +12,9 @@ def add_offset(augend: int, addend: int) -> int:
 def make_dataframe():
     return pd.DataFrame.from_dict(
         {
-            "ID": fs("increment"),
-            "Name": fs("person.full_name"),
-            "Email": fs("email"),
-            "Phone": fs("telephone", mask="+1 (###) #5#-7#9#"),
+            "Fecha": fs("increment"),
+            "Isla": fs("person.full_name"),
+            "Especie": fs("email"),
+            "Temporada": fs("telephone", mask="+1 (###) #5#-7#9#"),
         }
     )
