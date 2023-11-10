@@ -14,7 +14,7 @@ all: check coverage mutants
 		tests
 
 module = mimesis_and_ge
-codecov_token = 6c56bccb-1758-4ed9-8161-97c845591c26
+codecov_token = 5f4c2438-61b1-4bf1-8a4a-33e582545be0
 
 define lint
 	pylint \
