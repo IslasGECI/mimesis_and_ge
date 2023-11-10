@@ -2,7 +2,7 @@ import pandas as pd
 from mimesis import Fieldset
 from mimesis.locales import Locale
 
-fs = Fieldset(locale=Locale.EN, i=5)
+fs = Fieldset(locale=Locale.EN, i=7)
 
 
 def add_offset(augend: int, addend: int) -> int:
