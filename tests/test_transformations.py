@@ -1,4 +1,4 @@
-import dummy_transformations as dt
+import mimesis_and_ge as dt
 
 
 def test_add_offset():
