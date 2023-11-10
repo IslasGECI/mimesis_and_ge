@@ -22,4 +22,4 @@ def test_make_dataframe():
     assert (obtained_column_names == expected_column_names).all()
     obtained_islet = obtained.Isla
     all_posible_islet = ["Todos Santos", "Socorro", "Guadalupe", "Natividad"]
-    assert all(obtained_islet in all_posible_islet)
+    assert (obtained_islet in all_posible_islet).all()
