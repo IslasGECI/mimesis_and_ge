@@ -10,7 +10,8 @@ description-file = "README.md"
 home-page = "https://github.com/IslasGECI/mimesis_and_ge"
 module = "mimesis_and_ge"
 requires = [
-    mimesis,
-    great_expectations,
+    "great_expectations",
+    "mimesis",
+    "pytest-mimesis",
 ]
 requires-python=">=3.9"
