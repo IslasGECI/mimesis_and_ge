@@ -17,3 +17,6 @@ def test_make_dataframe():
     obtained_n_rows = len(obtained)
     expected_n_rows = 7
     assert obtained_n_rows == expected_n_rows
+    obtained_column_names = obtained.columns
+    expected_column_names = ["Fecha", "Isla", "Especie", "Temporada"]
+    assert (obtained_column_names == expected_column_names).all()
