@@ -10,4 +10,7 @@ def test_add_offset():
 
 
 def test_make_dataframe():
-    dt.make_dataframe()
+    obtained = dt.make_dataframe()
+    obtained_n_cols = len(obtained.columns)
+    expected_n_cols = 4
+    assert obtained_n_cols == expected_n_cols
