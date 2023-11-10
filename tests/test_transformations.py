@@ -7,3 +7,7 @@ def test_add_offset():
     expected = augend + addend
     obtained = dt.add_offset(augend, addend)
     assert expected == obtained
+
+
+def test_make_dataframe():
+    dt.make_dataframe()
