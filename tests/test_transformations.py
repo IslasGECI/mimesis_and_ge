@@ -14,3 +14,6 @@ def test_make_dataframe():
     obtained_n_cols = len(obtained.columns)
     expected_n_cols = 4
     assert obtained_n_cols == expected_n_cols
+    obtained_n_rows = len(obtained)
+    expected_n_rows = 7
+    assert obtained_n_rows == expected_n_rows
