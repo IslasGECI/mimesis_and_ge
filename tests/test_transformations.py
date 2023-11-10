@@ -20,3 +20,6 @@ def test_make_dataframe():
     obtained_column_names = obtained.columns
     expected_column_names = ["Fecha", "Isla", "Especie", "Temporada"]
     assert (obtained_column_names == expected_column_names).all()
+    obtained_islet = obtained.Isla
+    all_posible_islet = ["Todos Santos", "Socorro", "Guadalupe", "Natividad"]
+    assert obtained_islet in all_posible_islet
